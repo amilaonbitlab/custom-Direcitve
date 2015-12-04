@@ -1,0 +1,8 @@
+{
+  "name": "account-create-server",
+  "main": "server.js",
+  "dependencies": {
+    "angular-ui-router": "^0.2.15",
+    "express": "^4.13.3"
+  }
+}

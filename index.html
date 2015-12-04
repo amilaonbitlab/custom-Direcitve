@@ -1,0 +1,47 @@
+<!Doctype html>
+<html >
+<head>
+<title>Custom Direcive</title>
+<!-- Bower Css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body ng-app="app" >
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a ui-sref="home">Home</a></li>
+				<li class="" ><a ui-sref="grandParent">Grand Parent</a></li>
+				<li class="" ><a ui-sref="parent">Grand Parent</a></li>
+				<li class="" ><a ui-sref="child">Grand Parent</a></li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+
+<!-- Inject View Template Here-->
+<div ui-view></div>
+
+<!-- Bower Components  -->
+<script src="bower_components/angular/angular.min.js"></script>
+
+<!-- Node Module -->
+<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<!-- Custom Js -->
+<script src="app.js"></script>
+<script src="appRouteConfig.js"></script>
+<script src="app/homeCtrl.js"></script>
+<script src="app/homeDir.js"></script>
+<script src="app/grandParent/grandParentCtrl.js"></script>
+<script src="app/grandParent/grandParentDir.js"></script>
+<script src="app/parent/parentCtrl.js"></script>
+<script src="app/parent/parentDir.js"></script>
+<script src="app/child/childCtrl.js"></script>
+<script src="app/child/childDir.js"></script>
+
+</body>
+</html>
+
+       
