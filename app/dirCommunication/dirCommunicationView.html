@@ -1,0 +1,38 @@
+<p>This is customOne Directive View</p>
+
+<table border="1" style="width:100%">
+    <tr>
+        <td>Custom One</td>
+        <td>Custom Two</td>
+        <td>Parent Inside Custom Two</td>
+        <td>Isolate Inside Custom Two</td>
+    </tr>
+    <tr>
+        <td>
+            <custom-one></custom-one>
+        </td>
+        <td>
+            <custom-two></custom-two>
+        </td>
+        <td>
+            <parent></parent>
+        </td>
+        <td>
+            <test-isolate subscribe="subscribe" publish="publish"></test-isolate>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <custom-one></custom-one>
+        </td>
+        <td>
+            <custom-two></custom-two>
+        </td>
+        <td>
+            <parent></parent>
+        </td>
+        <td>
+            <test-isolate></test-isolate>
+        </td>
+    </tr>
+</table>

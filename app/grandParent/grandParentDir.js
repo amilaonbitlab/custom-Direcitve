@@ -5,7 +5,6 @@ app.directive('grandParent',function (){
         return {
             restrict: 'AE',
             scope: true,
-            controller: 'grandParentCtrl',
             templateUrl: 'app/grandParent/grandParentView.html',
             link: function (scope, element, attrs) {
                 element.on('click', function (event) {

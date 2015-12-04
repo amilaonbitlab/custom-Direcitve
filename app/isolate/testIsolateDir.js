@@ -1,15 +1,20 @@
 /**
  * Created by amila on 12/4/15.
  */
-app.directive('parent',function (){
+app.directive('testIsolate',function (){
         return {
             restrict: 'AE',
-            scope: true,
-            templateUrl: 'app/parent/parentView.html',
+            scope: {
+                message : '@',
+                item: '=',
+                subscribe : '=',
+                publish : '='
+            },
+            controller: function($rootScope){
+
+            },
+            templateUrl: 'app/isolate/testIsolateView.html',
             link: function (scope, element, attrs) {
-
-                scope.message = "This message inside parent Directive";
-
                 element.on('click', function (event) {
                     scope.$apply(function () {
                         scope.color = "blue";
